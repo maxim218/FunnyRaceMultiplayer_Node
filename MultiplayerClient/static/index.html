@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Мультиплеер</title>
+    <style>
+        .room-element {
+            padding: 10px;
+            background-color: bisque;
+            border-radius: 5px;
+            width: 200px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class = "multiplayer-page">
+    <h2>Создание новой комнаты</h2>
+    <p>Название комнаты</p>
+    <input type = "text" maxlength = "10" spellcheck = 'false' autocomplete = 'off' class = "multiplayer-page__room-name-field">
+    <button class = "multiplayer-page__create-room-btn">Создать комнату</button>
+    <br>
+    <br>
+    <h2>Список комнат</h2>
+    <div class = "multiplayer-page__rooms-list-box"></div>
+    <br>
+    <br>
+    <div class = "multiplayer-page__game-two-players-box" hidden>
+        <h2>Игра</h2>
+        <br>
+        <canvas width = '900px' height = '700px' class = 'game-two-players-box__canvas-plain'></canvas>
+        <br>
+        <br>
+        <h1 class = "multiplayer-page__game-over-label"></h1>
+    </div>
+</div>
+
+<script src = "./RESULT.js"></script>
+
+</body>
+</html>
